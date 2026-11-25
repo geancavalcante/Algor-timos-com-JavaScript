@@ -14,6 +14,6 @@ frm.addEventListener("submit", (e) =>{
     resp2.innerText = `Entrada de R$: ${entrada.toFixed(2)}`;
     resp3.innerHTML = `+12x de R$ ${parcelas.toFixed(2)}`;
 
-    e.preventDefault(2)
+    e.preventDefault()
 
 });

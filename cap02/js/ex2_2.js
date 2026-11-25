@@ -9,6 +9,6 @@ frm.addEventListener("submit", (e) => {
     const duracaoMinutos = duracao % 60;
     resp1.innerText = `${nomeFilme}`;
     resp2.innerText = `${duracaoHoras} hora(s) e ${duracaoMinutos} minuto(s)`;
-    e.preventDefault(e)
+    e.preventDefault()
 
 });

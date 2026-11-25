@@ -9,7 +9,7 @@ frm.addEventListener("submit", (e) =>{
 
     resp1.innerText = `Valor a pagar R$: ${valor.toFixed(2)}`;
     
-    e.preventDefault(e);
+    e.preventDefault();
 
 
 });
