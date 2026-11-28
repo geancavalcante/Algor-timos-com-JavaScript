@@ -3,18 +3,18 @@ const resp1 = document.querySelector("h3");
 
 frm.addEventListener("submit", (e) =>{
     const nome = frm.inNome.value;
-    const masculino = frm.inMasculino;
-    const feminino = frm.inFeminino;
+    const masculino = frm.inMasculino.checked;
     const altura = frm.inAltura.value;
 
+    let pesoIdeal;
     if(masculino){
-        const pesoIdeal = 22 * Math.pow(altura, 2);
-        resp1.innerText = `${nome}: Seu peso ideal é ${pesoIdeal.toFixed(3)} Kg`;
+        pesoIdeal = 22 * Math.pow(altura, 2);
 
-    } else if (feminino){
-        const pesoIdeal = 21 * Math.pow(altura, 2);
-        resp1.innerText = `${nome}: Seu peso ideal é ${pesoIdeal.toFixed(3)} Kg`;
+    } else{
+        pesoIdeal = 21 * Math.pow(altura, 2);
     };
+
+    resp1.innerText = `${nome}: Seu peso ideal é ${pesoIdeal.toFixed(3)} Kg`;
 
     e.preventDefault(e)
 
