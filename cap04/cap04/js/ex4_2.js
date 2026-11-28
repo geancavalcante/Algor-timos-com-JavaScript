@@ -19,3 +19,7 @@ frm.addEventListener("submit", (e) =>{
     e.preventDefault(e)
 
 });
+
+frm.addEventListener("reset", () => {
+    resp1.innerText = " "
+});
